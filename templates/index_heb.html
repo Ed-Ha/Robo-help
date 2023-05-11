@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="he">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Robo-Help</title>
+
+        <link href="/../static/css/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="\">Robo-Help</a>
+                <label class="toggle">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                  <span class="labels" data-on="לחץ לעברית" data-off="press for English"></span>
+                </label>
+                <a class="navbar-brand" href="https://github.com/Ed-Ha" target="_blank">צור קשר עם המפתח</a>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">ברוכים הבאים!</h1>
+                        <p class="fs-4">לחץ על בעל המקצוע ממנו אתה צריך עזרה והתחל לשוחח!</p>
+                        <input class="btn-primary btn-lg" type="text" id="mySearch" placeholder="Search.." title="Type in a professional">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Page Content-->
+       <section class="pt-4">
+         <div class="container px-lg-5 d-flex" id="professionals"><div class="row gx-lg-5"><div class="col-lg-6 col-xxl-4 mb-5" data-category="Doctor"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Doctor"><img src="/../static/images/Doctor.jpeg" alt="Doctor" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">רופא</h2>
+                            <p class="mb-0">שלום! אני ד"ר רובוט.
+                            שאל אותי שאלות לגבי טיפולים ואבחנות רפואיות.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Car_Mechanic"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Car_Mechanic"><img src="/../static/images/Car_Mechanic.jpeg" alt="Car Mechanic" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">מוסכניק</h2>
+                            <p class="mb-0">אהלן! אני מר רובוט ואני מוסכניק.
+                            שאל אותי כל שאלה בקשר לרכב שלך.</p>
+                        </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Stock_Market_Trader"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Stock_Market_Trader"><img src="/../static/images/Stock_Market_Trader.jpeg" alt="Stock Market Trader" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">יועץ השקעות</h2>
+                            <p class="mb-0">אהלן! אני מר רובוט ואני יועץ השקעות.
+                            שאל אותי שאלות לגבי שוק ההון והשקעות.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Nutritionist"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Nutritionist"><img src="/../static/images/Nutritionist.jpeg" alt="Nutritionist" width="100px" height="100px"></a></div>
+                        <h2 class="fs-4 fw-bold">תזונאי</h2>
+                        <p class="mb-0">שלום! אני מר רובוט ואני תזונאי.
+                        שאל אותי שאלות ובקש עצות לשמירה על תזונה נכונה ובריאה.</p>
+                        </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Personal_Trainer"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Personal_Trainer"><img src="/../static/images/Personal_Trainer.jpeg" alt="Personal Trainer" width="100px" height="100px"></a></div>
+                        <h2 class="fs-4 fw-bold">מאמן כושר</h2>
+                        <p class="mb-0">שלום! אני מר רובוט ואני מאמן כושר.
+                        שאל אותי שאלות בקשר לאימונים, פיתוח גוף וכושר.</p>
+                        </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Software_Developer"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Software_Developer"><img src="/../static/images/Software_Developer.jpeg" alt="Software Developer" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">מפתח תוכנה</h2>
+                            <p class="mb-0">אהלן! אני מר רובוט ואני מפתח תוכנה.
+                            שאל אותי כל שאלה בקשר לקוד שלך ואעזור בשמחה.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Career_Counselor"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Career_Counselor"><img src="/../static/images/Career_Counselor.jpeg" alt="Career Counselor" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">יועץ תעסוקה</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני יועץ תעסוקה.
+                            אני כאן כדי לייעץ לך בנושא קריירה ותעסוקה.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Marriage_Counselor"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Marriage_Counselor"><img src="/../static/images/Marriage_Counselor.jpeg" alt="Marriage Counselor" width="100px" height="100px"></a></div>
+                                <h2 class="fs-4 fw-bold">יועץ נישואים</h2>
+                                <p class="mb-0">היי! אני מר רובוט ואני יועץ נישואים.
+                                בקש ממני עצות ושאל לגבי בעיות במערכות היחסים שלך.</p>
+                                </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Financial_Planner"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Financial_Planner"><img src="/../static/images/Financial_Planner.jpeg" alt="Financial Planner" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">יועץ כלכלי</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני יועץ כלכלי.
+                            שאל אותי וקבל עצות לגבי ניהול הכספים שלך.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Dog_Trainer"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Dog_Trainer"><img src="/../static/images/Dog_Trainer.jpeg" alt="Dog Trainer" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">מאלף כלבים</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני מאלף כלבים.
+                            שאל אותי כל שאלה בנוגע לאילוף הכלב שלך.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Travel_Agent"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Travel_Agent"><img src="/../static/images/Travel_Agent.jpeg" alt="Travel Agent" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">סוכן נסיעות</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני סוכן נסיעות.
+                            שאל אותי לגבי טיפים, מסלולים ותכנון הטיול הבא שלך.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Graphic_Designer"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Graphic_Designer"><img src="/../static/images/Graphic_Designer.jpeg" alt="Graphic Designer" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">מעצב גרפי</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני מעצב גרפי.
+                            שאל אותי כל שאלה לגבי פרוייקטים ועיצוב גרפי.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Real_Estate_Agent"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Real_Estate_Agent"><img src="/../static/images/Real_Estate_Agent.jpeg" alt="Real Estate Agent" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">סוכן נדל"ן.</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני סוכן נדל"ן.
+                            שאל אותי כל שאלה לגבי קנייה או מכירה של נכסים.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Chef"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Chef"><img src="/../static/images/Chef.jpeg" alt="Chef" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">שף</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני שף.
+                            שאל אותי שאלות לגבי בישול ובקש מתכונים.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Architect"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Architect"><img src="/../static/images/Architect.jpeg" alt="Architect" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">אדריכל</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני אדריכל.
+                            שאל אותי וקבל עצות לגבי פרוייקט האדריכלות שלך.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Fashion_Stylist"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Fashion_Stylist"><img src="/../static/images/Fashion_Stylist.jpeg" alt="Fashion Stylist" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">סטייליסט</h2>
+                            <p class="mb-0">שלום! אני מר רובוט ואני סטייליסט.
+                            שאל אותי כל דבר לגבי פרטי לבוש ואופנה.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Marketing_Consultant"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Marketing_Consultant"><img src="/../static/images/Marketing_Consultant.jpeg" alt="Marketing Consultant" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">יועץ שיווק</h2>
+                            <p class="mb-0">שלום, אני מר רובוט ואני יועץ שיווקי.
+                            שאל אותי שאלות לגבי אסטרטגיות שיווק.</p>
+                            </div></div></div><div class="col-lg-6 col-xxl-4 mb-5" data-category="Horticulturist"> <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0"><div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><a href="\heb\Horticulturist"><img src="/../static/images/Horticulturist.jpeg" alt="Horticulturist" width="100px" height="100px"></a></div>
+                            <h2 class="fs-4 fw-bold">גנן</h2>
+                            <p class="mb-0">שלום, אני מר רובוט ואני גנן!
+                            שאל אותי שאלות לגבי גינון, צמחים וטיפוח הגינה.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white"> עדן חסון 2023 &copy; זכויות יוצרים </p></div>
+        </footer>
+    <script>
+  document.querySelector('input[type="checkbox"]').addEventListener('change', function () {
+    if (this.checked) {
+      window.location.href = '/heb';
+    } else {
+      window.location.href = '/';
+    }
+  });
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function() {
+              $('#mySearch').on('input', function() {
+                  var query = $(this).val();
+                  $.get('/search', {query: query}, function(data) {
+                      $('#professionals').html(data.html);
+                  });
+              });
+          });
+        </script>
+
+    </body>
+</html>
