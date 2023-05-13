@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robo-Help</title>
+  </head>
+  <body>
+    <iframe id="my-iframe" src="https://robot-help.ew.r.appspot.com/" height="100%" width="100%"  frameBorder="0"></iframe>
+    <script>
+		const iframe = document.getElementById('my-iframe');
+		iframe.style.height = window.innerHeight + 'px';
+		window.addEventListener('resize', () => {
+			iframe.style.height = window.innerHeight + 'px';
+		});
+	</script>
+  </body>
+</html>
