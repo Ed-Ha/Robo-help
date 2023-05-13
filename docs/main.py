@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from api_req import handle_API_request
-import openai
+
 
 
 
@@ -409,6 +409,8 @@ def clear_history():
 app = Flask(__name__)
 
 
+
+
 @app.route('/search')
 def search():
     query = request.args.get('query', '').lower()
@@ -426,6 +428,7 @@ def search():
             category] + '''</div></div></div>'''
 
     return jsonify({'html': f'<div class="row gx-lg-5">{filtered_html}</div>'})
+
 
 
 
@@ -480,3 +483,8 @@ def clear_heb_conversation(profession):
     professions[profession]['messages'].clear()
     professions[profession]['messages'].append(professions[profession]['start prompt'])
     return redirect(url_for('start_heb_chat', profession=profession))
+
+
+
+if __name__ == "__main__":
+    app.run(debug = True, host="0.0.0.0", port=3000)
