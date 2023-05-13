@@ -1,9 +1,9 @@
 # Robo-help
 This is a Python Flask web application that allows users to chat with different virtual assistants based on their profession.
 
-try me:
-here: https://robot-help.ew.r.appspot.com/
-the project is hosted on a Google Cloud server to ensure that it's accessible online.
+try me: https://robot-help.ew.r.appspot.com/
+
+The project is hosted on a Google Cloud server to ensure that it's accessible online.
 The server is responsible for handling incoming requests from users, processing them, and returning the appropriate responses to the users.
 
 The main functionality of the app is the chat feature, which is implemented using HTML templates and JavaScript to enable communication between the user and the virtual assistant. The app has two versions, one in English and the other in Hebrew.
